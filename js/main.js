@@ -1,0 +1,9 @@
+// Check if service worker is supported by browser
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../sw_cached_site.js")
+      .then((reg) => console.log("Service Worker: Registered"))
+      .catch((err) => console.error(`Service Worker: Error: ${err}`));
+  });
+}

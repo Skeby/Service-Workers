@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  padding: 1.5rem 5rem;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
